@@ -17,6 +17,8 @@
     "test:eslint": "eslint packages examples scripts",
     "test:coverage": "jest --coverage --detectOpenHandles",
     "test:smoke": "babel-node ./tests/smoke.runner.js",
+    "test:docker-app": "babel-node ./tests/wdio-docker-service/docker-app/docker.runner.js",
+    "test:docker-selenium": "babel-node ./tests/wdio-docker-service/docker-selenium/docker.runner.js",
     "version": "node ./scripts/changelog.js && git add CHANGELOG.md && npm run generate:typings",
     "generate:typings": "node ./scripts/type-generation/generate-all-typings.js",
     "watch": "node ./scripts/watch",
